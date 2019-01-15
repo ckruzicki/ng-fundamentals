@@ -2,7 +2,10 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
+
+import { EventsAppComponent } from './events-app.component';
+import { EventsListComponent } from './events/events-list.components'
+import { EventThumbnailComponent } from './events/events-thumbnail.component'
 
 @NgModule({
   imports: [
@@ -10,7 +13,10 @@ import { AppComponent } from './app.component';
     AppRoutingModule
   ],
   declarations: [
-    AppComponent
-  ],  bootstrap: [AppComponent]
+    EventsAppComponent,
+    EventsListComponent,
+    EventThumbnailComponent
+  ],  
+  bootstrap: [EventsAppComponent]
 })
 export class AppModule { }
