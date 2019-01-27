@@ -1,6 +1,5 @@
 import { Component, Input, OnChanges } from '@angular/core';
 import { ISession } from '../shared';
-import { timingSafeEqual } from 'crypto';
 
 @Component({
     selector: 'session-list',
