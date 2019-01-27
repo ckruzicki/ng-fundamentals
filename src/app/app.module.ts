@@ -12,7 +12,8 @@ import {
   EventRouteActivator,
   EventListResolver,
   CreateSessionComponent,
-  SessionListComponent
+  SessionListComponent,
+  DurationPipe
  } from './events/index'
 
 import { EventsAppComponent } from './events-app.component'
@@ -41,7 +42,8 @@ import { AuthService } from './user/auth.service';
     Error404Component,
     CreateSessionComponent,
     SessionListComponent,
-    CollapsibleWellComponent
+    CollapsibleWellComponent,
+    DurationPipe
   ],  
   providers: [
     EventService, 
@@ -60,6 +62,6 @@ export class AppModule { }
 
 export function checkDirtyState(component:CreateEventComponent) {
   if(component.isDirty)
-     return window.confirm('You have not saed this event, do you really want to cancel?')
+     return window.confirm('You have not saved this event, do you really want to cancel?')
   return true;
 }
