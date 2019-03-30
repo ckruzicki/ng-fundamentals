@@ -32,6 +32,6 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 
 ## Push code up to repo
 
-https://github.com/ckruzicki/ng-fundamentals.git
+git push https://github.com/ckruzicki/ng-fundamentals.git master
 
 ## ng lint
